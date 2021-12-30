@@ -86,6 +86,11 @@
             margin-left: 10px;
         }
     }
+    @media(max-width:1999px){
+        .download__body{
+            margin-top: -80px;
+        }
+    }
 
     @media (max-width: 1110px) {
         .button-appstore {
