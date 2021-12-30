@@ -1,0 +1,108 @@
+.compatibility {
+    background-color: #e7e7e7;
+    min-height: 444px;
+    &__body {
+        padding-top: 86px;
+        padding-left: 68px;
+    }
+    &__title {
+        font-family: $font_second;
+        font-size: 24px;
+        line-height: $line-height-base;
+        font-weight: $normal;
+        color: $body-color;
+    }
+    &__line {
+        max-width: 970px;
+        height: 3px;
+        background-color: #cbcbcb;
+        margin-top: 22px;
+    }
+    &__phones {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        padding-right: 59px;
+        flex-wrap: wrap;
+    }
+}
+.phones {
+    &__ios {
+        max-width: 445px;
+        &-title {
+            font-family: $font_second;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $normal;
+            color: $body-color;
+        }
+        &-text {
+            font-family: $font-family-base;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: $normal;
+            color: $body-color;
+        }
+        &-photo {
+            margin-top: 26px;
+            margin-left: 2px;
+            #photo-ios {
+                width: 36%;
+                display: block;
+                height: auto;
+            }
+        }
+    }
+    &__android {
+        max-width: 445px;
+        margin-right: 45px;
+        &-title {
+            font-family: $font_second;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $normal;
+            color: $body-color;
+        }
+        &-text {
+            font-family: $font-family-base;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: $normal;
+            color: $body-color;
+        }
+        &-photo {
+            max-width: 378px;
+            margin-top: 33px;
+            margin-left: 2px;
+            #photo-android {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .phones__android {
+        margin-top: 40px;
+        margin-bottom: $gutter;
+    }
+}
+@media (max-width: 767px) {
+    .phones__android-photo {
+        max-width: 450px;
+    }
+}
+@media (max-width: 540px) {
+    .phones__android-photo {
+        max-width: 550px;
+    }
+}
+@media (max-width: 810px){
+    .compatibility{
+        &__body{
+            padding-left: 0px;
+        }
+    }
+}

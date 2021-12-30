@@ -1,0 +1,130 @@
+.baner-wrapper {
+    background-color: $primary;
+    padding-top: $gutter;
+}
+
+.baner {
+    max-width: 1550px;
+    max-height: 950px;
+    margin: 0px auto;
+    z-index: -100;
+    .carousel-inner {
+        margin-top: -4px;
+        margin-left: 9px;
+        background-image: url(../img/iphone.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        min-height: 690px;
+    }
+    .carousel-item {
+        width: 100%;
+
+        .text-baner {
+            font-family: $font_second;
+            font-size: 88px;
+            line-height: $line-height-base;
+            font-weight: $semibold;
+            color: $white;
+            position: relative;
+            text-align: center;
+            margin-top: 196px;
+            margin-right: 18px;
+            @include media-breakpoint-down(md) {
+                font-size: 70px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 60px;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 40px;
+            }
+        }
+        .button_baner {
+            display: flex;
+            justify-content: center;
+            margin-right: 115px;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 789px){
+           .button_baner{
+                margin-right: 83px;
+            }
+          }
+
+        .button-one {
+            margin-left: 99px;
+            margin-right: 32px;
+        }
+
+        .btn-theme {
+            color: $white;
+            background-color: transparent;
+            border: 2px solid $white;
+        }
+        .btn:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-theme:hover {
+            color: #000;
+            background-color: rgba(177, 177, 177, 0.514);
+        }
+
+        .appstore {
+            min-width: 257px;
+            height: 77px;
+            background-color: rgba(6, 53, 80, 0);
+            border: 3px solid $white;
+            border-radius: 5px;
+            margin-top: 46px;
+
+            .text-store {
+                font-size: 30px;
+                line-height: $line-height-base;
+                font-weight: $normal;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                max-width: 257px;
+                margin-top: -45px;
+                margin-left: 68px;
+            }
+
+            .icon-store {
+                max-width: 52px;
+                height: 52px;
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .carousel-indicators {
+        margin-bottom: 55px;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid $white;
+    }
+    .carousel-indicators .active {
+        background-color: $white;
+    }
+  
+}
+@media (max-width: 789px) {
+    .button-two {
+        margin-left: 67px;
+    }
+}
+@media (max-width: 789px){
+  .button_baner{
+      margin-right: 83px;
+  }
+}

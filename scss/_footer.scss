@@ -1,0 +1,113 @@
+footer {
+    min-height: 225px;
+    background-color: #f4f4f4;
+}
+.footer {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 94px;
+    }
+    &__text {
+        font-family: $font_second;
+        line-height: $line-height-base;
+        margin-left: -28px;
+    }
+    &__subscribe {
+        margin-top: -34px;
+        margin-right: 27px;
+        &-title {
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 13px;
+        }
+        &-input {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 311px;
+                height: 48px;
+                background-color: #f4f4f4;
+                border: 1px solid #a3a3a3;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.input {
+    &__email {
+        font-family: $font_second;
+        font-size: 16px;
+        line-height: $line-height-base;
+        margin-right: 11px;
+        padding-left: 10px;
+        padding-bottom: 3px;
+    }
+    &__submit {
+        width: 101px;
+        height: 48px;
+        background-color: #f06464;
+        border-radius: 5px;
+        margin-right: -8px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #f4f4f4;
+        margin-top: 0px;
+    }
+}
+@media (max-width: 1050px) {
+    .footer__text {
+        margin-left: 55px;
+    }
+}
+@media (max-width: 767px) {
+    .footer {
+        &__body {
+            align-items: center;
+        }
+        &__text {
+            margin-right: -310px;
+            margin-top: 70px;
+            margin-left: 77px;
+            padding-top: 30px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .footer__text {
+        margin-left: auto;
+    }
+}
+@media (max-width: 475px) {
+    .footer {
+        &__body {
+           margin-right: auto;
+        }
+        &__text {
+          margin-left: 77px;
+        }
+    }
+    .input {
+        &__email {
+            max-width: 190px;
+        }
+        &__submit {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 410px) {
+    .footer__text {
+        margin-left: auto;
+    }
+}
+@media (max-width: 340px) {
+    .footer{
+        &__body{
+            margin-right: -16px;
+        }
+        &__text{
+            margin-left: 0px;
+        }
+    }
+}

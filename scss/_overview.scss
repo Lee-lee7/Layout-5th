@@ -1,0 +1,44 @@
+.overview {
+    padding-top: 109px;
+    background-color: $white;
+    z-index: 1000;
+    position: relative;
+
+    &__caption {
+        font-family: $font-second;
+        font-size: 48px;
+        line-height: $line-height-base;
+        font-weight: $semibold;
+        color: #3a3a3a;
+        text-align: center;
+        margin-top: -10px;
+    }
+    &__row {
+        margin-top: 62px;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    &__item {
+        text-align: center;
+        &-title {
+            font-family: $font_second;
+            line-height: 26px;
+            font-weight: $semibold;
+            margin-top: 36px;
+        }
+        &-text {
+            font-size: 16px;
+            padding-left: 40px;
+            padding-right: 40px;
+            line-height: 26px;
+            margin-top: -4px;
+            padding-bottom: $gutter;
+        }
+    }
+}
+.item__title-focus {
+    margin-right: 18px;
+}
+.item__text-focus {
+    margin-right: 18px;
+}

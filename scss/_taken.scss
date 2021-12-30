@@ -1,0 +1,40 @@
+.taken {
+    background-color: $white;
+    &__content {
+        max-width: 470px;
+        margin-left: 67px;
+        margin-top: 68px;
+    }
+    &__title {
+        font-family: $font_second;
+        font-size: 47px;
+        line-height: $line-height-base;
+        font-weight: $medium;
+        color: #f06464;
+    }
+    &__text {
+        margin-top: 21px;
+        margin-left: 4px;
+    }
+}
+@media (max-width: 1000px) {
+    .taken {
+        &__content {
+            margin-right: -130px;
+        }
+    }
+}
+@media (max-width: 499px) {
+    .taken {
+        &__content {
+            margin-left: 0px;
+        }
+    }
+}
+@media (max-width: 530px) {
+    .taken {
+        &__content {
+            padding-right: 133px;
+        }
+    }
+}

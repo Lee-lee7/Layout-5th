@@ -1,0 +1,256 @@
+.share {
+    background-color: #262626;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    margin-top: 101px;
+    &__row {
+        margin-top: -21px;
+    }
+    &__photo {
+        margin-top: 185px;
+        display: block;
+    }
+    &__slider {
+        margin-top: 184px;
+    }
+}
+.photo-iphone {
+    margin-top: -113px;
+    margin-left: -22px;
+}
+.title-slider {
+    font-family: $font_second;
+    font-size: 46px;
+    line-height: $line-height-base;
+    font-weight: $semibold;
+    color: #ffffff;
+    margin-bottom: -22px;
+}
+button {
+    background: none;
+    margin-top: -60px;
+}
+.video-button {
+    margin-top: 6px;
+}
+.slider {
+    min-width: 0;
+    &_item {
+        padding-right: $gutter-S;
+    }
+}
+
+.item {
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: $normal;
+        color: #aeaeae;
+        padding-top: 101px;
+    }
+    &__row {
+        padding-top: 69px;
+        margin-top: -44px;
+    }
+}
+.item__text {
+    &-second {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: -38px;
+        padding-right: 0px;
+        margin-top: -36px;
+        color: #aeaeae;
+    }
+}
+.slick-slider {
+    min-width: 0;
+    margin-top: 14px;
+}
+.slick-track {
+    display: flex;
+    align-items: center;
+    margin-top: -95px;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.slider .slick-dots {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -7px;
+    margin-top: 34px;
+}
+.slider .slick-dots li {
+    list-style: none;
+    margin: 5px;
+}
+.slider .slick-dots button {
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ffffff;
+}
+.slider .slick-dots li.slick-active button {
+    background-color: white;
+}
+
+.slick-slider {
+    .item {
+        &__text {
+            margin-top: 0px;
+            padding-top: 101px;
+            &-second {
+                padding-top: 55px;
+            }
+        }
+    }
+
+    .video-button {
+        margin-top: 85px;
+        margin-left: 2px;
+    }
+}
+
+.item {
+    &__row {
+        &_one {
+            padding-top: 17px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .share__photo {
+        margin-top: 0px;
+    }
+    .photo-iphone {
+        width: 90%;
+        height: 90%;
+        margin-top: 72px;
+    }
+    .item__text-second {
+        padding-right: 14px;
+        margin-left: -45px;
+    }
+}
+@media (max-width: 1199px) {
+    .share__photo {
+        margin-top: 0px;
+    }
+    .photo-iphone {
+        width: 90%;
+        height: 90%;
+        margin-top: 60px;
+    }
+    .item__text-second {
+        padding-right: 14px;
+        margin-left: -45px;
+    }
+}
+@media (max-width: 991px) {
+    .slick-slider {
+        .item__text-second {
+            margin-top: -67px;
+            margin-left: -31px;
+        }
+    }
+    .photo-iphone {
+        margin-top: 67px;
+    }
+}
+@media (max-width: 767px) {
+    .share__photo {
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .video-button {
+        margin-left: -43px;
+        width: 70%;
+        height: auto;
+    }
+    .item__text-second {
+        margin-top: -14px;
+        margin-left: -68px;
+    }
+}
+
+/*IPad*/
+
+@media (max-width: 834px) {
+    .share {
+        &__photo {
+            margin-top: -60px;
+            .photo-iphone {
+                width: 90%;
+                height: 85%;
+                margin-top: 85px;
+            }
+        }
+        &__slider {
+            margin-top: 60px;
+            .title-slider {
+                font-size: 40px;
+            }
+            .item__text {
+                font-size: 16px;
+                &-second {
+                    margin-left: -62px;
+                    padding-top: 20px;
+                    margin-top: -35px;
+                }
+            }
+            .video-button {
+                margin-left: -35px;
+            }
+        }
+    }
+}
+
+/*IPad Pro*/
+
+@media (max-width: 1024px) {
+    .share {
+        &__photo {
+            margin-top: -26px;
+        }
+        &__slider {
+            margin-top: 129px;
+        }
+    }
+}
+
+/*iphone*/
+
+@media (max-width: 767px) {
+    .share {
+        &__slider {
+            margin-top: 35px;
+            .item__text {
+                &-second {
+                    margin-left: 140px;
+                    margin-top: -90px;
+                    &-two {
+                        margin-top: 0px;
+                        margin-left: -110px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .share__slider {
+        .item__text-second-two {
+            margin-top: -90px;
+            margin-left: 140px;
+        }
+    }
+}
